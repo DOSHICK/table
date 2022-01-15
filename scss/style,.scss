@@ -17,10 +17,10 @@ body{
     width: $inputWidth;
   }
   &__weight{
-    width: 100px;
+    width: 50px;
   }
   &__calories{
-    width: 65px;
+    width: 90px;
   }
   &__XE{
     width: 65px;
@@ -45,11 +45,11 @@ body{
       text-align: center;
     }
     input#input-weight{
-      width: 100px;
+      width: 50px;
     }
     p#output-calories{
       display: block;
-      width: 65px ;
+      width: 90px ;
       height: 30px;
     }
   }

@@ -49,11 +49,11 @@ body {
 }
 
 .above__weight {
-  width: 100px;
+  width: 50px;
 }
 
 .above__calories {
-  width: 65px;
+  width: 90px;
 }
 
 .above__XE {
@@ -81,12 +81,12 @@ body {
 }
 
 #wrapper .wrapper__block input#input-weight {
-  width: 100px;
+  width: 50px;
 }
 
 #wrapper .wrapper__block p#output-calories {
   display: block;
-  width: 65px;
+  width: 90px;
   height: 30px;
 }
 

@@ -31,7 +31,7 @@ addOptions();
 
 //   let info = jsonArray.find(item => item.name == input.value);
 //   console.log(info);
-
+  
 //   let weight = document.getElementById("weight")
 //   weight.innerHTML = info.weight
 // }
@@ -41,15 +41,15 @@ console.log("hola");
 
 let inputWeight = document.getElementById("input-weight")
 inputWeight.onkeydown = function () {
-  let inputAutocomplete = document.getElementById("autocomplete__input");
+  let input = document.getElementById("autocomplete__input");
   let inputValue = inputWeight.value;
 
-  let info = jsonArray.find(item => item.name == inputAutocomplete.value);
+  let info = jsonArray.find(item => item.name == input.value);
   console.log(info);
 
   let calories = document.getElementById("output-calories")
   calories.innerHTML = (inputValue * info.calories) / info.weight;
-  let bredUnit = document.getElementById("output-XE")
+  let bredUnit = document.getElementById("output-XE");
   bredUnit.innerHTML = inputValue / info.weight;
 }
 

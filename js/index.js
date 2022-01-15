@@ -1,6 +1,6 @@
 // Подключение JSON
 let request = new XMLHttpRequest();
-request.open("GET", "../json/base.json", false);
+request.open("GET", "./json/base.json", false);
 request.send(null);
 let my_JSON_object = JSON.parse(request.responseText);
 let jsonArray = my_JSON_object.rows;
@@ -37,7 +37,7 @@ console.log("hola");
 
 
 let inputWeight = document.getElementById("input-weight")
-inputWeight.onkeydown = function () {
+inputWeight.onkeyup = function () {
   let input = document.getElementById("autocomplete__input");
   let inputValue = inputWeight.value;
 

@@ -70,6 +70,7 @@ ul.autocomplete__results{
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   width: $inputWidth;
+  max-width: $inputWidth;
   background: rgb(221, 221, 221);
 }
 ul.autocomplete__results--is-visible{

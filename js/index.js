@@ -19,26 +19,26 @@ function addOptions() {
     optionCreate.innerHTML = optionName;
     select.appendChild(optionCreate);
   }
-};
+}
 addOptions();
 
 
-let inputWeight = document.getElementById("input-weight")
+let inputWeight = document.getElementById("input-weight");
 inputWeight.onkeyup = function () {
   let input = document.getElementById("autocomplete__input");
   let inputValue = inputWeight.value;
-  console.log(input.value)
+  console.log(input.value);
 
-  
-    let info = jsonArray.find(item => item.name == input.value);
 
-    let calories = document.getElementById("output-calories");
-    let caloriesFind = (inputValue * info.calories) / info.weight;
-    calories.innerHTML = caloriesFind + " ккал";
+  let info = jsonArray.find(item => item.name == input.value);
 
-    let bredUnit = document.getElementById("output-XE");
-    bredUnit.innerHTML = inputValue / info.weight;
-}
+  let calories = document.getElementById("output-calories");
+  let caloriesFind = (inputValue * info.calories) / info.weight;
+  calories.innerHTML = Math.round(caloriesFind) + " ккал";
+
+  let bredUnit = document.getElementById("output-XE");
+  bredUnit.innerHTML = Map.round(inputValue / info.weight);
+};
 
 
 // console.log("hola")

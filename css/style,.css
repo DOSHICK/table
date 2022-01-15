@@ -99,6 +99,7 @@ ul.autocomplete__results {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 400px;
+  max-width: 400px;
   background: #dddddd;
 }
 

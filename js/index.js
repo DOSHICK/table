@@ -37,7 +37,9 @@ inputWeight.onkeyup = function () {
   calories.innerHTML = Math.round(caloriesFind) + " ккал";
 
   let bredUnit = document.getElementById("output-XE");
-  bredUnit.innerHTML = Map.round(inputValue / info.weight);
+  bredUnit.innerHTML = Math.round(inputValue / info.weight);
+
+  
 };
 
 

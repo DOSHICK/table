@@ -10,11 +10,14 @@ body{
 
 
 #wrapper{
-  .wrapper__block{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     max-width: 100%;
+    label.autocomplete-label{
+      width: 80px;
+    }
+  .wrapper__block{
     p{
       width: 65px;
       text-align: center;
@@ -42,16 +45,13 @@ body{
   overflow: hidden;
 }
 
-label.autocomplete-label{
-  display: inline-block;
-  max-width: 80px;
-}
+
 .autocomplete__notice{
   display: none;
 } 
 .autocomplete__input{
+  height: 30px;
   padding: 5px 10px 5px 20px;
-  // border-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: none;
@@ -62,8 +62,8 @@ ul.autocomplete__results{
   position: absolute;
   height: 300px;
   overflow: auto;
-
-  left: 75px;
+  top: 30px;
+  left: 80px;
   display: none;
   transition: all 0.3s ease 0s;
   padding: 5px 10px 5px 20px;

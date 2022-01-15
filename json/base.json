@@ -265,24 +265,6 @@
 			"calories": ""
 		},
 		{
-			"name": "Сосиски, вареная колбаса",
-			"amount": "2 шт.",
-			"weight": "160",
-			"calories": ""
-		},
-		{
-			"name": "Вареники",
-			"amount": "2 шт.",
-			"weight": "",
-			"calories": ""
-		},
-		{
-			"name": "Пирожок с мясом",
-			"amount": "менее 1 шт.",
-			"weight": "",
-			"calories": ""
-		},
-		{
 			"name": "Пельмени",
 			"amount": "4 шт.",
 			"weight": "",
@@ -310,7 +292,7 @@
 			"name": "Кукуруза (початок)",
 			"amount": "1/3 початка",
 			"weight": "100",
-			"calories": ""
+			"calories": "86"
 		},
 		{
 			"name": "Кукуруза сладкая консервированная",
@@ -799,9 +781,22 @@
 			"calories": ""
 		},
 		{
-			"name": "орковный",
+			"name": "Сок морковный",
 			"amount": "1 стакан",
 			"weight": "250",
 			"calories": ""
-		}]
+		},
+    {
+			"name": "undefited",
+			"amount": "",
+			"weight": "",
+			"calories": ""
+		}
+  ,{
+    "name": "",
+    "amount": "",
+    "weight": "",
+    "calories": ""
+  }
+]
 }

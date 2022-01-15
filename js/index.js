@@ -31,14 +31,14 @@ inputWeight.onkeyup = function () {
 
   
     let info = jsonArray.find(item => item.name == input.value);
+
     let calories = document.getElementById("output-calories");
-    calories.innerHTML = (inputValue * info.calories) / info.weight;
+    let caloriesFind = (inputValue * info.calories) / info.weight;
+    calories.innerHTML = caloriesFind + " ккал";
+
     let bredUnit = document.getElementById("output-XE");
     bredUnit.innerHTML = inputValue / info.weight;
 }
-
-
-
 
 
 // console.log("hola")

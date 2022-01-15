@@ -26,42 +26,10 @@ button {
 body {
   background: #c5c5c5;
   padding: 30px 0px 30px 0px;
-}
-
-.above {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0px 0px 5px 0px;
-  text-align: center;
-}
-
-.above__name {
-  width: 400px;
-}
-
-.above__weight {
-  width: 50px;
-}
-
-.above__calories {
-  width: 90px;
-}
-
-.above__XE {
-  width: 65px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper .wrapper__block {
-  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,12 +59,18 @@ body {
 }
 
 .container {
+  height: 100%;
   padding: 30px 0px 30px 0px;
   width: 100%;
   max-width: 700px;
   padding: 0px 20px 0px 20px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+label.autocomplete-label {
+  display: inline-block;
+  max-width: 80px;
 }
 
 .autocomplete__notice {
@@ -113,13 +87,17 @@ body {
 }
 
 ul.autocomplete__results {
+  position: absolute;
+  height: 300px;
+  overflow: auto;
+  left: 75px;
   display: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   padding: 5px 10px 5px 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  max-width: 400px;
+  width: 400px;
   background: #dddddd;
 }
 

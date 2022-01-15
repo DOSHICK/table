@@ -5,37 +5,12 @@ $inputWidth : 400px;
 body{
   background: rgb(197, 197, 197);
   padding: 30px 0px 30px 0px;
-}
-.above{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 0px 5px 0px;
-  text-align: center;
-  &__name{
-    width: $inputWidth;
-  }
-  &__weight{
-    width: 50px;
-  }
-  &__calories{
-    width: 90px;
-  }
-  &__XE{
-    width: 65px;
-  }
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-// #weight{
-//   float: right;
-//   width: 30px;
-//   height: 30px;
-// }
 
 #wrapper{
   .wrapper__block{
-    float: right;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,6 +32,7 @@ body{
 }
 
 .container{
+  height: 100%;
   padding: 30px 0px 30px 0px;
   width: 100%;
   max-width: 700px;
@@ -66,6 +42,10 @@ body{
   overflow: hidden;
 }
 
+label.autocomplete-label{
+  display: inline-block;
+  max-width: 80px;
+}
 .autocomplete__notice{
   display: none;
 } 
@@ -79,12 +59,17 @@ body{
   width: $inputWidth;
 }
 ul.autocomplete__results{
+  position: absolute;
+  height: 300px;
+  overflow: auto;
+
+  left: 75px;
   display: none;
   transition: all 0.3s ease 0s;
   padding: 5px 10px 5px 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  max-width: $inputWidth;
+  width: $inputWidth;
   background: rgb(221, 221, 221);
 }
 ul.autocomplete__results--is-visible{

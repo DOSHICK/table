@@ -12,25 +12,19 @@
 <body>
 
   <div class="container">
-    <div class="above">
-      <p class="above__name">Продукт</p>
-      <p class="above__weight">Вес</p>
-      <p class="above__calories">Калории</p>
-      <p class="above__XE">ХЕ</p>
-    </div>
-
     <div id="wrapper" class="wrapper">
-      <label for="autocomplete">
+      <label for="autocomplete" class="autocomplete-label">
         <!-- <button id="allBtn">0</button> -->
+        Продукт :
       </label>
       <select id="autocomplete" class="autocomplete"></select>
-      <div class="wrapper__block">
-        <input type="text" id="input-weight">
-        <p id="output-calories">0</p>
-        <p id="output-XE">0</p>
-      </div>
     </div>
-
+    <div class="wrapper__block">
+      <label for="input-weight">Вес:</label>
+      <input type="text" id="input-weight">
+      <p>Калории:<span id="output-calories">0</span></p>
+      <p>ХЕ:<span id="output-XE">0</span></p>
+    </div>
   </div>
 </body>
 

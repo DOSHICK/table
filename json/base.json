@@ -327,85 +327,85 @@
 		{
 			"name": "Молоко (цельное, топленое)",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Кефир",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Пахта",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Простокваша",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Сыворотка, йогурт, сливки (любой жирности)",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Йогурт",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Сливки",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Цельное молоко 3,6% жирности",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "155"
 		},
 		{
 			"name": "Цельное молоко 0,5% жирности",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "85"
 		},
 		{
 			"name": "Простокваша",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "100"
 		},
 		{
 			"name": "Йогурт 1%",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "120"
 		},
 		{
 			"name": "Йогурт 3,6%",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "170"
 		},
 		{
 			"name": "Кефир (см. % жирности)",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": "150"
 		},
 		{
 			"name": "Сгущенное молоко без сахара",
 			"amount": "",
-			"weight": "110 мл",
+			"weight": "110",
 			"calories": "160-175"
 		},
 		{
@@ -753,55 +753,55 @@
 		{
 			"name": "Квас",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Кока-кола (обычная)",
 			"amount": "½ стакана",
-			"weight": "100 мл",
+			"weight": "100",
 			"calories": ""
 		},
 		{
 			"name": "Пепси-кола (обычная)",
 			"amount": "½ стакана",
-			"weight": "100 мл",
+			"weight": "100",
 			"calories": ""
 		},
 		{
 			"name": "Сок ягодный натуральный 100%, без сахара",
 			"amount": "Примерно ½ стакана",
-			"weight": "100 мл",
+			"weight": "100",
 			"calories": ""
 		},
 		{
 			"name": "Сок яблочный",
 			"amount": "Менее 1/3 стакана",
-			"weight": "80 мл",
+			"weight": "80",
 			"calories": ""
 		},
 		{
 			"name": "Сок томатный",
 			"amount": "1,5 стакана",
-			"weight": "300 мл",
+			"weight": "300",
 			"calories": ""
 		},
 		{
 			"name": "Сок сливовый",
 			"amount": "½ стакана",
-			"weight": "80 мл",
+			"weight": "80",
 			"calories": ""
 		},
 		{
 			"name": "Сок свекольный, морковный",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		},
 		{
 			"name": "Морковный",
 			"amount": "1 стакан",
-			"weight": "250 мл",
+			"weight": "250",
 			"calories": ""
 		}]
 }

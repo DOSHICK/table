@@ -1,15 +1,12 @@
 // Подключение JSON
 let request = new XMLHttpRequest();
 request.open("GET", "../json/base.json", false);
-request.send(null)
+request.send(null);
 let my_JSON_object = JSON.parse(request.responseText);
 let jsonArray = my_JSON_object.rows;
 let jsonLength = jsonArray.length;
 //проверка подключения JSON
 // console.log(my_JSON_object.rows[1].name);
-function updateValue(e) {
-  console.log("hola")
-}
 
 
 //  Создание вариантов выбора в select
@@ -20,7 +17,7 @@ function addOptions() {
     optionCreate.value = idCounter;
     let optionName = jsonArray[idCounter].name;
     optionCreate.innerHTML = optionName;
-    select.appendChild(optionCreate)
+    select.appendChild(optionCreate);
   }
 };
 addOptions();
@@ -47,7 +44,7 @@ inputWeight.onkeydown = function () {
   let info = jsonArray.find(item => item.name == input.value);
   console.log(info);
 
-  let calories = document.getElementById("output-calories")
+  let calories = document.getElementById("output-calories");
   calories.innerHTML = (inputValue * info.calories) / info.weight;
   let bredUnit = document.getElementById("output-XE");
   bredUnit.innerHTML = inputValue / info.weight;

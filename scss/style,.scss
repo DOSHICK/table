@@ -2,39 +2,18 @@
 
 $inputWidth : 400px;
 
-body{
+body {
   background: rgb(197, 197, 197);
   padding: 30px 0px 30px 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+.title{
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
-
-#wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 100%;
-    label.autocomplete-label{
-      width: 80px;
-    }
-  .wrapper__block{
-    p{
-      width: 65px;
-      text-align: center;
-    }
-    input#input-weight{
-      width: 50px;
-    }
-    p#output-calories{
-      display: block;
-      width: 90px ;
-      height: 30px;
-    }
-  }
-  
-}
-
-.container{
+.container {
   height: 100%;
   padding: 30px 0px 30px 0px;
   width: 100%;
@@ -45,42 +24,91 @@ body{
   overflow: hidden;
 }
 
+.list {
 
-.autocomplete__notice{
-  display: none;
-} 
-.autocomplete__input{
-  height: 30px;
-  padding: 5px 10px 5px 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: none;
-  border: 1px black solid;
-  width: $inputWidth;
+  .list__item {
+    max-width: 400px;
+    margin: 5px 0px 5px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    label{
+      width: 100px;
+    }
+    // p{
+    //   min-width: 100px;
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   span{
+    //     margin: 0px 0px 0px 10px;
+    //   }
+    // }
+    input{
+      padding: 5px 5px 5px 5px;
+      border-radius: 10px;
+      border: 1px #000 solid;
+      outline: none;
+    }
+    .input-label {}
+    .product__input {
+    }
+  }
+  .list__item-out{
+    max-width: none;
+    justify-content: start;
+    width: 100%;
+    label{
+      display: block;
+      width: 100px;
+    }
+  }
 }
-ul.autocomplete__results{
-  position: absolute;
-  height: 300px;
-  overflow: auto;
-  top: 30px;
-  left: 80px;
-  display: none;
-  transition: all 0.3s ease 0s;
-  padding: 5px 10px 5px 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: $inputWidth;
-  max-width: $inputWidth;
-  background: rgb(221, 221, 221);
+
+.description {
+  padding: 20px 0px 10px 0px;
+  p{
+    color: rgb(48, 48, 48);
+    margin: 0px 0px 5px 0px;
+    span{
+      font-weight: bold;
+    }
+  }
+  
 }
-ul.autocomplete__results--is-visible{
-  display: block;
-}
-li.autocomplete__result{
-  cursor: pointer ;
-  border-bottom: 1px black solid;
-  padding: 3px 0px 3px 0px;
-}
-li.autocomplete__result--is-selected {
-  background: rgb(178, 241, 162);
+form{
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label{
+    text-align: center;
+    font-size: 18px;
+  }
+  textarea{
+    outline: none;
+    resize: none;
+    margin: 5px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    font-size: 16px;
+  }
+  button.form__btn{
+    font-size: 16px;
+    font-weight: 500;
+    background: rgb(91, 89, 226);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    :hover{
+      transform: rotate(90deg);
+    }
+  }
 }

@@ -9,41 +9,51 @@ let jsonLength = jsonArray.length;
 // console.log(my_JSON_object.rows[1].name);
 
 
-//  Создание вариантов выбора в select
+//  Создание вариантов выбора в input
 function addOptions() {
   for (let idCounter = 0; idCounter < jsonLength; idCounter++) {
-    let select = document.getElementById("autocomplete");
+    let datalist = document.getElementById("input-datalist");
     let optionCreate = document.createElement("option");
-    optionCreate.value = idCounter;
+    // optionCreate.value = idCounter; // если нужно отображать id
     let optionName = jsonArray[idCounter].name;
     optionCreate.innerHTML = optionName;
-    select.appendChild(optionCreate);
+    datalist.appendChild(optionCreate);
   }
 }
-addOptions();
+addOptions();//вызов создания вариантов выбора с input
 
 
+// Подсчёт при вводе в input 
+let inputMain = document.getElementById("input")
+input.oninput = function () {
+  displayCountings()
+};
+// Подсчёт при вводе в inputWeight
 let inputWeight = document.getElementById("input-weight");
-inputWeight.onkeyup = function () {
-  let input = document.getElementById("autocomplete__input");
+inputWeight.oninput = function () {
+  displayCountings()
+};
+
+// Функция для вывода рассчётов в HTML
+function displayCountings() {
+  let input = document.getElementById("input");
   let inputValue = inputWeight.value;
   console.log(input.value);
-
 
   let info = jsonArray.find(item => item.name == input.value);
 
   let calories = document.getElementById("output-calories");
-  let caloriesFind = (inputValue * info.calories) / info.weight;
-  calories.innerHTML = Math.round(caloriesFind) + " ккал";
+  calories.innerHTML = countFromWeight(inputValue, info.calories, info.weight) + " ккал";
 
   let bredUnit = document.getElementById("output-XE");
-  bredUnit.innerHTML = Math.round(inputValue / info.weight);
+  bredUnit.innerHTML = countFromWeight(inputValue, 1, info.weight) //Math.round(inputValue / info.weight);
 
-  
-};
+}
 
-
-// console.log("hola")
-
-
+// Функция для подсчёта по пропорции
+function countFromWeight(inWeight, fromModif, fromWeight) {
+  let modifName = (inWeight * fromModif) / fromWeight;
+  // console.log(modifName) //проверка на работоспособность
+  return modifName
+}
 

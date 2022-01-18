@@ -11,24 +11,49 @@
 
 <body>
 
+
+
   <div class="container">
-    <div id="wrapper" class="wrapper">
-      <label for="autocomplete" class="autocomplete-label">
-        <!-- <button id="allBtn">0</button> -->
-        Продукт:
+
+    <h1 class="title">Рассчёт хлебных единиц:</h1>
+
+    <ul class="list">
+      <li class="list__item">
+        <label for="input-datalist" class="input-label">
+          Продукт:
+        </label>
+        <input list="input-datalist" id="input" class="product__input" type="text">
+        <datalist id="input-datalist">
+        </datalist>
+      </li>
+      <li class="list__item">
+        <label for="input-weight">Граммы/мл:</label>
+        <input type="text" id="input-weight">
+      </li>
+      <li class="list__item list__item-out">
+        <label>Калории:</label><span id="output-calories">0</span>
+      </li>
+      <li class="list__item list__item-out">
+        <label>ХЕ:</label><span id="output-XE">0</span>
+      </li>
+    </ul>
+
+    <div class="description">
+      <p><span>Как пользоваться:</span> выбираете подходящий продукт, вводите вес и в строфе "ХЕ" появится пересчёт в хлебных
+        единицах.</p>
+      <p>Если вы не нашли своего продукта в поиске - напишите в форму снизу название продукта и по возможности мы добавим его</p>
+    </div>
+    <form action="https://formspree.io/f/moqrjdgg" method="POST">
+      <label>
+        Продукт(ы), которые нужно добавить:
       </label>
-      <select id="autocomplete" class="autocomplete"></select>
-    </div>
-    <div class="wrapper__block">
-      <label for="input-weight">Вес:</label>
-      <input type="text" id="input-weight">
-      <p>Калории:<span id="output-calories">0</span></p>
-      <p>ХЕ:<span id="output-XE">0</span></p>
-    </div>
+      <textarea name="message"></textarea>
+      <button class="form__btn" type="submit">Отправить</button>
+    </form>
   </div>
 </body>
 
 <script src="./js/index.js"></script>
-<script src="./js/combobox.js"></script>
+<!-- <script src="./js/combobox.js"></script> -->
 
 </html>
